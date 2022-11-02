@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CreatePurchaseRequest">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical"
+        android:backgroundTint="@color/theme_color"
+        android:background="@drawable/top_title_corner"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_find_supplier"
+                android:layout_width="55dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_arrow"
+                android:layout_gravity="center"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Create PR"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:layout_marginLeft="55dp"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="center"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/pr_site_id"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:hint="Site Id" />
+
+            <EditText
+                android:id="@+id/pr_company_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:hint="Company Name" />
+
+            <EditText
+                android:id="@+id/pr_req_meterial"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:hint="@string/req_meterial_item"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/pr_qty"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:hint="Quantity" />
+
+            <EditText
+                android:id="@+id/pr_delivery_address"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:hint="Delivery Aaddress" />
+
+            <EditText
+                android:id="@+id/pr_requisitioner_name"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:hint="@string/requisitioner_name"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/pr_supplier_id"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:editable="false"
+                android:hint="Supplier Id"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/pr_due_date"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/due_date"
+                android:textSize="18dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/pr_total_amount"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/green"
+                android:layout_marginTop="30dp"
+                android:hint="Total Amount" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pr_create_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/green"
+                    android:text="Create"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/pr_calculate_btn"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="40dp"
+                    android:backgroundTint="@color/theme_color"
+                    android:text="Calculate"
+                    android:textColor="@color/white" />
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

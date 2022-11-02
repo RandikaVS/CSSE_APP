@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">CSSE Mobile App</string>
+    <string name="register"><u>Register</u></string>
+    <string name="login"><u>Login</u></string>
+    <string name="profile">Profile</string>
+    <string name="create_pr">Create PR</string>
+    <string name="requisite_orders">Requisite Orders</string>
+    <string name="received_goods">Received Goods</string>
+    <string name="menu_drawer_open">Drawer Menu Open</string>
+    <string name="menu_drawer_close">Drawer Menu Close</string>
+    <string name="req_meterial_item">Required Meterial Item</string>
+    <string name="requisitioner_name">Requisitioner Name</string>
+    <string name="due_date"><u>Due Date</u></string>
+
+    <string-array name="meterial_array">
+        <item>Cement</item>
+        <item>Sand</item>
+        <item>Steel</item>
+        <item>Interlock</item>
+        <item>Tile</item>
+    </string-array>
+</resources>

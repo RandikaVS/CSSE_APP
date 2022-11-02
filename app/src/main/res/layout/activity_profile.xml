@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:layout_width="406dp"
+                    android:layout_height="120dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:src="@drawable/user" />
+
+                <EditText
+                    android:id="@+id/profile_fname"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="First Name"/>
+
+                <EditText
+                    android:id="@+id/profile_lname"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:inputType="textPersonName"
+                    android:hint="Last Name"/>
+
+                <EditText
+                    android:id="@+id/profile_email"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:clickable="false"
+                    android:layout_gravity="center"
+                    android:inputType="textEmailAddress"
+                    android:hint="Email"/>
+
+                <EditText
+                    android:id="@+id/profile_eid"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:clickable="false"
+                    android:layout_gravity="center"
+                    android:hint="Employee Id"/>
+
+                <EditText
+                    android:id="@+id/profile_designation"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center"
+                    android:hint="Designation"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/profile_delete_btn"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Delete"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme_color"/>
+
+                    <Button
+                        android:id="@+id/profile_update_btn"
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
+                        android:text="Update"
+                        android:layout_marginLeft="80dp"
+                        android:textColor="@color/white"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/green"/>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
