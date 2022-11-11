@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     android:orientation="vertical"
     tools:context=".RegisterUser">
 
@@ -12,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="vertical"
-        android:backgroundTint="@color/theme_color"
+        android:backgroundTint="@color/blue"
         android:background="@drawable/top_title_corner"
         >
 

@@ -1,5 +1,6 @@
 package com.user.cssemobileapp;
 
+import static com.user.cssemobileapp.constants.Url.dbName;
 import static com.user.cssemobileapp.constants.Url.rootUrl;
 
 import androidx.annotation.Nullable;
@@ -47,7 +48,7 @@ public class CreatePurchaseRequest extends AppCompatActivity {
 
     String materialName,materialId,materialDescription,materialUnitPrice,status;
     double totalPrice;
-    private String URL= rootUrl+"/csse/CreatePr.php";
+    private String URL= rootUrl+"/"+dbName+"/CreatePr.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -159,12 +160,13 @@ public class CreatePurchaseRequest extends AppCompatActivity {
                 String supplierId = extra.getString("supplierId");
                 String date = Date.getText().toString().trim();
                 String total =TotalAmount.getText().toString().trim();
-                status ="Approved";
 
-                if(total.length()>=6) {
+                if(total.length()>=8) {
                     status = "Pending";
                 }
-
+                else{
+                    status = "Approved";
+                }
                 boolean isSuccess = true;
 
                 if(siteId.isEmpty()){
@@ -286,7 +288,7 @@ public class CreatePurchaseRequest extends AppCompatActivity {
 
     public void getMaterialDetails(){
 
-        String URL= rootUrl+"/csse/GetMaterialDetails.php?material="+materialName;
+        String URL= rootUrl+"/"+dbName+"/GetMaterialDetails.php?material="+materialName;
 
         HttpsTrustManager.allowAllSSL();
 

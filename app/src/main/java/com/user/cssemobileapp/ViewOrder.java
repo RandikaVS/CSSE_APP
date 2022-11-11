@@ -1,5 +1,6 @@
 package com.user.cssemobileapp;
 
+import static com.user.cssemobileapp.constants.Url.dbName;
 import static com.user.cssemobileapp.constants.Url.rootUrl;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -67,7 +68,7 @@ public class ViewOrder extends AppCompatActivity {
 
         orderId = extra.getString("orderId");
 
-        URL= rootUrl+"/csse/GetOrderDetails.php?id="+orderId;
+        URL= rootUrl+"/"+dbName+"/GetOrderDetails.php?id="+orderId;
 
         getOrderDetails();
 
@@ -83,7 +84,7 @@ public class ViewOrder extends AppCompatActivity {
 
     public void markOrderReceived(){
 
-        String UpdateUrl = rootUrl+"/csse/UpdateOrderReceived.php?id="+orderId;
+        String UpdateUrl = rootUrl+"/"+dbName+"/UpdateOrderReceived.php?id="+orderId;
 
         HttpsTrustManager.allowAllSSL();
 

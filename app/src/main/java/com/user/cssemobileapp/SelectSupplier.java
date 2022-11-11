@@ -1,5 +1,6 @@
 package com.user.cssemobileapp;
 
+import static com.user.cssemobileapp.constants.Url.dbName;
 import static com.user.cssemobileapp.constants.Url.rootUrl;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -52,7 +53,7 @@ public class SelectSupplier extends AppCompatActivity {
 
         Bundle extras = getIntent().getExtras();
         item = extras.getString("material");
-        URL= rootUrl+"/csse/FindSupplier.php?item="+item;
+        URL= rootUrl+"/"+dbName+"/FindSupplier.php?item="+item;
         SearchTag.setText(item);
 
         BackFindSupplier.setOnClickListener(new View.OnClickListener() {

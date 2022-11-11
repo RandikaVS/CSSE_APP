@@ -1,5 +1,6 @@
 package com.user.cssemobileapp;
 
+import static com.user.cssemobileapp.constants.Url.dbName;
 import static com.user.cssemobileapp.constants.Url.rootUrl;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +29,7 @@ public class DashBoard extends DrawerBase {
 
     private TextView Requests,Pending,Approved,Received;
 
-    String URL= rootUrl+"/csse/GetOrdersCount.php";
+    String URL= rootUrl+"/"+dbName+"/GetOrdersCount.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
