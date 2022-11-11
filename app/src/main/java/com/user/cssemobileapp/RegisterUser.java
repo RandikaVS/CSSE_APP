@@ -1,5 +1,6 @@
 package com.user.cssemobileapp;
 
+import static com.user.cssemobileapp.constants.Url.dbName;
 import static com.user.cssemobileapp.constants.Url.rootUrl;
 
 import androidx.annotation.Nullable;
@@ -41,7 +42,7 @@ public class RegisterUser extends AppCompatActivity {
     private int success = 0;
 
 
-    String URL= rootUrl+"/csse/ManagerRegister.php";
+    String URL= rootUrl+"/"+dbName+"/ManagerRegister.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -111,7 +112,7 @@ public class RegisterUser extends AppCompatActivity {
                     Password.requestFocus();
                     isSuccess=false;
                 }
-                if(password != re_password){
+                if(!password.equals(re_password)){
                     Password.setError("Passwords didn't match");
                     Password.requestFocus();
                     ConfirmPassword.setError("Passwords didn't match");
@@ -172,6 +173,9 @@ public class RegisterUser extends AppCompatActivity {
                     RequestQueue requestQueue = Volley.newRequestQueue(RegisterUser.this);
                     requestQueue.add(stringRequest);
 
+                }
+                else{
+                    processDialog.dismiss();
                 }
 
 

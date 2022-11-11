@@ -1,5 +1,6 @@
 package com.user.cssemobileapp;
 
+import static com.user.cssemobileapp.constants.Url.dbName;
 import static com.user.cssemobileapp.constants.Url.rootUrl;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -40,7 +41,7 @@ public class RequisiteOrders extends DrawerBase implements AdapterView.OnItemSel
     RequisiteOrdersAdapter requisiteOrdersAdapter;
     public static ArrayList<Orders> ordersArrayList = new ArrayList<>();
 
-    String URL= rootUrl+"/csse/GetOrders.php?filter=All";
+    String URL= rootUrl+"/"+dbName+"/GetOrders.php?filter=All";
     String selectedFilter;
 
     Orders orders;
@@ -72,7 +73,7 @@ public class RequisiteOrders extends DrawerBase implements AdapterView.OnItemSel
         FilterBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                URL= rootUrl+"/csse/GetOrders.php?filter="+selectedFilter;
+                URL= rootUrl+"/"+dbName+"/GetOrders.php?filter="+selectedFilter;
                 retrieveOrders();
                 ListView.setAdapter(requisiteOrdersAdapter);
             }

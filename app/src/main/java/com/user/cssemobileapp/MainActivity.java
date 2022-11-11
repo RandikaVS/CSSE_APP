@@ -1,5 +1,6 @@
 package com.user.cssemobileapp;
 
+import static com.user.cssemobileapp.constants.Url.dbName;
 import static com.user.cssemobileapp.constants.Url.rootUrl;
 
 import androidx.annotation.Nullable;
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     private LinearLayout RegisterBtn;
     private ProgressDialog processDialog;
 
-    String URL= rootUrl+"/csse/ManagerLogin.php";
+    String URL= rootUrl+"/"+dbName+"/ManagerLogin.php";
 
 
     @Override

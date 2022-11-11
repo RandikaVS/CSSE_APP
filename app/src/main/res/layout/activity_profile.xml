@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".Profile">
 
     <ScrollView
@@ -91,7 +92,7 @@
                         android:text="Delete"
                         android:textColor="@color/white"
                         android:layout_gravity="center"
-                        android:backgroundTint="@color/theme_color"/>
+                        android:backgroundTint="@color/red"/>
 
                     <Button
                         android:id="@+id/profile_update_btn"

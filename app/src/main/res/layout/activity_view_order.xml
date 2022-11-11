@@ -5,13 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/background"
     tools:context=".ViewOrder">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="vertical"
-        android:backgroundTint="@color/theme_color"
+        android:backgroundTint="@color/blue"
         android:background="@drawable/top_title_corner"
         >
 
@@ -86,7 +87,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Order Id"
+                            android:text="Order Id :            "
+                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -109,8 +111,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Site Id   "
+                            android:text="Site Id   :             "
                             android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
                             android:textSize="18sp"/>
 
                         <TextView
@@ -133,15 +136,16 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Company Name"
+                            android:text="Company Name :      "
                             android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
                             android:textSize="18sp"/>
 
                         <TextView
                             android:id="@+id/order_details_company"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="55dp"
+                            android:layout_marginLeft="5dp"
                             android:hint="company name"
                             android:textSize="18sp"/>
 
@@ -157,7 +161,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Material"
+                            android:textStyle="bold"
+                            android:text="Material :         "
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -181,8 +186,9 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Quantity"
+                            android:text="Quantity :        "
                             android:layout_marginLeft="10dp"
+                            android:textStyle="bold"
                             android:textSize="18sp"/>
 
                         <TextView
@@ -205,7 +211,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Delivery Address"
+                            android:text="Delivery Address :    "
+                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -213,7 +220,7 @@
                             android:id="@+id/order_details_address"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="55dp"
+                            android:layout_marginLeft="5dp"
                             android:hint="address"
                             android:textSize="18sp"/>
 
@@ -229,7 +236,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Requisitioner Name"
+                            android:text="Requisitioner Name : "
+                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -237,7 +245,6 @@
                             android:id="@+id/order_details_rqName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="55dp"
                             android:hint="name"
                             android:textSize="18sp"/>
 
@@ -253,7 +260,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Supplier Id"
+                            android:text="Supplier Id :                 "
+                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -261,7 +269,6 @@
                             android:id="@+id/order_details_supplierId"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginLeft="55dp"
                             android:hint="supplier Id"
                             android:textSize="18sp"/>
 
@@ -277,7 +284,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Date"
+                            android:text="Date :                "
+                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -301,7 +309,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Total Amount"
+                            android:text="Total Amount :"
+                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
@@ -325,7 +334,8 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Status"
+                            android:text="Status :             "
+                            android:textStyle="bold"
                             android:layout_marginLeft="10dp"
                             android:textSize="18sp"/>
 
